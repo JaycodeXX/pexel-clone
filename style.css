@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+:root{
+    --white: #ffffff;
+    --black: #000000;
+    --border-radius: 10px;
+    --LightGray: #7f7f7f;
+}
+section{
+    padding: 10px 83px;
+}
+.hero{
+    width: 100%;
+    background-image: linear-gradient(rgba(13, 13, 13, 0.904),rgba(27, 27, 29, 0.5)),url(./assets/bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo img{
+    width: 150px;
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+.nav_link_item{
+    color: var(--white);
+    margin: 0 30px;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.btn{
+    background: var(--white);
+    padding: 15px 15px;
+    border-radius: 5px;
+    color: var(--black);
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 600;
+    background: var(--white);
+
+}
+#dot{
+    font-size: 18px;    
+}
+.hero_content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 7% 0;
+    margin: 0 auto;
+}
+.hero_content h1{
+    color: var(--white);
+    font-size: 33px;
+    line-height: 40px;
+    font-weight: 600;
+}
+form{
+    width: 100%;
+    position: relative;
+}
+.form_control{
+    width: 100%;
+    margin: 25px 0;
+    border: none;
+    outline: none;
+    border-radius:var(--border-radius);
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 600;
+    color: var(--LightGray);
+}
+input{
+    height: 50px;
+    width: 100%;
+    padding: 8px 40px 8px 20px;
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+
+button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: var(--LightGray);
+}
+.trending h3{
+    color: rgba(255, 255, 255, 0.698);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.trending a{
+    color: var(--white);
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.btn_circle{
+    background: var(--LightGray);
+    padding: 5px 5px;
+    border-radius: 50%;
+}
+
