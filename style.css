@@ -12,6 +12,9 @@
     --border-radius: 10px;
     --LightGray: #7f7f7f;
 }
+a:hover{
+    transition: 0.2s ease-in;
+}
 section{
     padding: 10px 83px;
 }
@@ -21,7 +24,7 @@ section{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: 65vh;
 }
 .navbar{
     display: flex;
@@ -31,6 +34,9 @@ section{
 }
 .logo img{
     width: 150px;
+}
+.logo img:hover{
+    color: var(--LightGray);
 }
 .navbar ul{
     display: flex;
@@ -45,6 +51,9 @@ section{
     line-height: 26px;
     font-weight: 600;
 }
+.nav_link_item:hover{
+    color: var(--LightGray);
+}
 .btn{
     background: var(--white);
     padding: 15px 15px;
@@ -56,6 +65,10 @@ section{
     background: var(--white);
 
 }
+.btn:hover{
+    transition: 2s ease-in-out;
+    color: var(--white);
+}
 #dot{
     font-size: 18px;    
 }
@@ -64,7 +77,6 @@ section{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     padding: 7% 0;
     margin: 0 auto;
 }
@@ -124,9 +136,102 @@ button{
     line-height: 26px;
     font-weight: 600;
 }
+.trending a:hover{
+    color: var(--LightGray);
+}
 .btn_circle{
     background: var(--LightGray);
     padding: 5px 5px;
     border-radius: 50%;
 }
-
+.btn_circle:hover{
+    color: var(--white);
+}
+.author{
+    float: right;
+}
+.author h3{
+    color: rgba(255, 255, 255, 0.698);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+.author h3 span{
+    color: rgba(255, 255, 255, 0.889);
+}
+.author h3 span:hover{
+    color: var(--white);
+}
+/* ################ Bodynav ############# */
+.bodynav{
+    width: 100%;
+}
+.bodynav_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bodynav_link{
+    padding: 3% 0;
+    margin: 7px;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    color: var(--LightGray);
+    text-align: center;
+    margin: auto 7px;
+}
+.active{
+    background: var(--black);
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: var(--white);
+}
+.bodynav_link:hover{
+    color: var(--black);
+}
+.active:hover{
+    background: #2C343E;
+    color: var(--white);
+}
+/* ########### Select Section ##########*/
+.select_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.select_section h2{
+    font-size: 23px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #2c343e;
+}
+.select_section select{
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--black);
+    border: none;
+}
+.selct{
+    background: transparent;
+    outline: 1px solid var(--LightGray);
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+/* ############ Image Section ############# */
+.imgages{
+    width: 100%;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.col img{
+    width: 100%;
+}
